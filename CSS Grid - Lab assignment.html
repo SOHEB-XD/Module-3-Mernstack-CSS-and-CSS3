@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <style>
+        
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product-price {
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="https://cdn.thewirecutter.com/wp-content/media/2023/06/bestlaptops-2048px-9765.jpg?auto=webp&quality=75&width=1024" alt="Product 1" class="product-image">
+            <h3 class="product-title">Laptop</h3>
+            <p class="product-price">80,000rs</p>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?semt=ais_hybrid" alt="Product 2" class="product-image">
+            <h3 class="product-title">Smartphone</h3>
+            <p class="product-price">20,000rs</p>
+        </div>
+        <!-- Product Card 3 to 9 (repeat similarly) -->
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/81PtF30TLUL._AC_UY1100_.jpg" alt="Product 3" class="product-image">
+            <h3 class="product-title">Bag</h3>
+            <p class="product-price">400rs</p>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/713TUYjagQL.jpg" alt="Product 2" class="product-image">
+            <h3 class="product-title">Speaker</h3>
+            <p class="product-price">2000rs</p>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1582150264904-e0bea5ef0ad1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d3Jpc3R3YXRjaHxlbnwwfHwwfHx8MA%3D%3D" alt="Product 2" class="product-image">
+            <h3 class="product-title">Watch</h3>
+            <p class="product-price">1000rs</p>
+        </div>
+        <div class="product-card"> 
+            <img src="https://m.media-amazon.com/images/I/61V1+D7RysL.jpg" alt="Product 2" class="product-image">
+            <h3 class="product-title">Charger</h3>
+            <p class="product-price">800rs</p></div>
+        
+        
+    </div>
+</body>
+</html>
